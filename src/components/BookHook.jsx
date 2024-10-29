@@ -2,7 +2,7 @@ import React from "react";
 
 const SingleHook = () => {
   return (
-    <div className="w-6 h-4 bg-[#EAEAEA] border-l-0 border-r-0 border-b-0 border-t-[1.9px] border-t-[#D7D7D7] rounded-sm flex space-x-[4px] mt-[15px]">
+    <div className="w-6 h-4 bg-[#EAEAEA] border-l-0 border-r-0 border-b-0 border-t-[1.9px] border-t-[#D7D7D7] rounded-sm flex space-x-1 mt-4">
       <div className="bg-[#4E4E4E] h-[32px] w-[4px] rounded-full relative bottom-[22px] left-[6px]"></div>
       <div className="bg-[#4E4E4E] h-[32px] w-[4px] rounded-full relative bottom-[22px] right-[-6px]"></div>
     </div>

@@ -28,7 +28,7 @@ const TodoItems = () => {
       .map((task) =>
         setTimeout(() => {
           setTasks((currentTasks) => currentTasks.filter((t) => t.id !== task.id));
-        }, 3000)
+        }, 1000)
       );
 
     return () => timers.forEach((timer) => clearTimeout(timer));
@@ -96,7 +96,7 @@ const TodoItems = () => {
     </div>)}
 
     {tasks.length > 0 && (
-      <div className="pt-0 bg-white rounded-lg border-b  h max-h-[530px] border-b-[#d0e5f9] max-w-md mx-auto mt-8">
+      <div className={` ${tasks.length < 9 ? "":"rounded-b-2xl" } pt-0 bg-white  border-b  h max-h-[544px] border-b-[#d0e5f9]   max-w-md mx-auto mt-8`}>
       {/* Input Field */}
       
 
@@ -129,6 +129,7 @@ const TodoItems = () => {
             onClick={addTask}
             className="pl-4 text-gray-500 text-2xl  hover:text-blue-500"
             aria-label="Add task"
+            disabled={tasks.length >= 9}
           >
             +
           </button>
@@ -138,7 +139,8 @@ const TodoItems = () => {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && addTask()}
-            className="flex-grow px-4 py-2 border-none focus:outline-none text-left  border-b rounded-2xl"
+            className="flex-grow px-4 py-2 border-none focus:outline-none text-left  border-b rounded-br-2xl"
+            disabled={tasks.length >= 9}
           />
         </div>
       )}
