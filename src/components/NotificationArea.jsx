@@ -2,7 +2,7 @@ import React from "react";
 
 const NotificationArea = () => {
   return (
-    <div className="mt-[-53px] ml-[16px] text-white" >
+    <div className="-mt-13.25 ml-4 text-white" >
       12:30
     </div>
   );
