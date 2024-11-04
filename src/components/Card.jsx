@@ -1,7 +1,6 @@
 import React from "react";
-import NotificationArea from './NotificationArea'
+import NotificationArea from "./NotificationArea";
 import Panel from "./Panel";
-
 
 const Card = () => {
   return (
@@ -18,5 +17,3 @@ const Card = () => {
 };
 
 export default Card;
-
-
