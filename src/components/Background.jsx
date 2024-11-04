@@ -1,17 +1,24 @@
+import React from "react";
+import Card from "./Card";
+import TodoFrame from "./TodoFrame";
+
 const Background = () => {
   return (
     <>
-      <div className="w-[497px] h-[497px] rounded-full blur-3xl bg-[#4400FF1F] absolute left-[-200px] top-[-200px]"></div>
+      
+      <div className="w-custom1 h-custom1 rounded-full blur-3xl bg-custom1 absolute -left-50 -top-50 "></div>
       <div className="h-screen w-screen bg-transparent">
         <div
-          className=" min-w-[360px] w-[360px] h-[800px] border-white border-[12px] rounded-3xl overflow-hidden mx-auto mt-16 bg-[linear-gradient(192.04deg, #5E54F7 0%, #F7A5CB 54.14%, #C47151 100%)]"
-        ></div>
+          className=" min-w-96 w-96 h-200 border-white border-12 rounded-3xl overflow-hidden mx-auto mt-16 bg-custom-gradient backdrop-blur-lg"
+        >
+          <Card />
+          <TodoFrame/>
+        </div>
       </div>
-      <div className="w-[497px] h-[497px] rounded-full blur-3xl bg-[#00F0FF1A] absolute bottom-[-200px] right-[-200px]"></div>
+      <div className="w-custom1 h-custom1 rounded-full blur-3xl bg-custom2 relative -bottom-50 -right-50"></div>
     </>
   );
 };
 
 export default Background;
-
 
